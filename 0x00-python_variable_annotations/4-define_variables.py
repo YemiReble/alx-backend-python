@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Type annotation variables Function"""
+""" Type annotation variables Function """
 
 
 # Variable Annotations
