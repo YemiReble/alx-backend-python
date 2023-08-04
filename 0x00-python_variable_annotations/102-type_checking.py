@@ -5,7 +5,7 @@
 from typing import Any, List, Tuple
 
 
-def zoom_array(lst: Tuple[int], factor: int = 2) -> List:
+def zoom_array(lst: List, factor: int = 2) -> List:
     """ Iterate and zoom in through a list 2x """
     zoomed_in: List = [
         item for item in lst
