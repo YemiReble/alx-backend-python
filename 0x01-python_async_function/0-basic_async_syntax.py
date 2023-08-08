@@ -6,7 +6,7 @@ import random
 import asyncio
 
 
-async def wait_random(max_delay: int=10) -> float:
+async def wait_random(max_delay: int = 10) -> float:
     """ This Function deplays using any given value of the
     default value of 10 """
     # if max_delay is None:
