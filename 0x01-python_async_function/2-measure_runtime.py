@@ -11,7 +11,7 @@ async def measure_time(n: int, max_delay: int) -> float:
     """ This fucntion calculate the time that the imported
     function takes to run """
     start_time = time.time()
-    waiting = await wait_n(n, max_delay)
+    asyncio.run(wait_n(n, max_delay))
     end_time = time.time()
     run_time = start_time - end_time
     return float(run_time / n)
