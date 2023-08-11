@@ -4,14 +4,12 @@
 
 import asyncio
 import random
+from typing import Generator
 
 
-async def async_generator():
+async def async_generator() -> Generator[float, None, None]:
     """ This function takes no argument but loop 10 times
     to provide Asyncronious """
-    rand = random.random(0, 10)
-    await asyncio.sleep(1)
-    return rand
-
-print(async_generator())
-
+    for i in range(10):
+        await asyncio.sleep(1)
+        yield random.random() * 10
